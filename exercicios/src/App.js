@@ -1,8 +1,8 @@
-import React from "react"
-import { Text } from 'react-native'
+import React from 'react';
+import {Text} from 'react-native';
 
 function App() {
-    return <Text> Primeiro Component </Text>
+  return <Text> Primeiro Componente </Text>;
 }
 
-export default App
+export default App;
