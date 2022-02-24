@@ -1,6 +1,6 @@
-import React from "react";
-import { Text } from 'react-native'
-import Style from "./style";
+import React from 'react';
+import {Text} from 'react-native';
+import Style from './style';
 
 /* Meu exercicio
 export default props =>  {
@@ -14,11 +14,8 @@ export default props =>  {
 
 // Resultado oficial
 export default ({min, max}) => {
-    const delta = max - min + 1
-    const aleatorio = parseInt(Math.random() * delta) + min
-    return (
-        <Text style={Style.txtM}>
-            O valor aleatório é {aleatorio}
-        </Text>
-    )
-}
+  const delta = max - min + 1;
+  let aleatorio = parseInt(Math.random() * delta) + min;
+  setTimeout(() => aleatorio = parseInt(Math.random() * delta) + min, 2000)
+  return <Text style={Style.txtM}>O valor aleatório é {aleatorio}</Text>;
+};
